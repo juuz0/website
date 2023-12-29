@@ -71,7 +71,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {Object.entries(projects).map(([path, { link, desc, status }]) => {
                     return (
-                        <ProjectCard desc={desc} status={status} link={link} name={path} />
+                        <ProjectCard key={link} desc={desc} status={status} link={link} name={path} />
                     );
                 })}
             </div>
@@ -79,7 +79,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {Object.entries(opensource).map(([path, { link, desc, status }]) => {
                     return (
-                        <ProjectCard desc={desc} status={status} link={link} name={path} />
+                        <ProjectCard key={link} desc={desc} status={status} link={link} name={path} />
                     );
                 })}
             </div>
