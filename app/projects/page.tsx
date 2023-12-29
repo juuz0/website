@@ -46,18 +46,19 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = ({ name, link, desc, status }) => {
     return (
-        <div className="bg-niceblack border border-niceblack rounded-md p-4 flex flex-col space-y-4">
+        <div className="bg-neutral-100 dark:bg-niceblack border dark:border-niceblack rounded-md p-4 flex flex-col space-y-4">
             <div className="basis-1/4">
                 <span className="text-xl">{name}</span>
-                <span className="bg-sky-800 float-right rounded-full px-2 py-1 text-center text-sm">{status}</span>
+                <span className="bg-sky-800 text-white float-right rounded-full px-2 py-1 text-center text-sm">{status}</span>
             </div>
             <div className="basis-2/4">
-                <p className="text-slate-400 text-sm">
+                <p className="text-slate-800 dark:text-slate-400 text-sm">
                     {desc}
                 </p>
             </div>
             <div className="basis-1/4 flex flex-row x-space-4 pt-4 inset-x-0 bottom-0">
-                <Link href={link} className="bg-anotherblack px-4 py-1 text-sm rounded-lg border border-gray-700 focus:ring-4 focus:ring-gray-200">Link</Link>
+                <Link href={link} className="bg-anotherblack px-4 py-1 text-slate-200 dark:text-slate-400 text-sm 
+                rounded-lg border border-gray-700 hover:border-gray-300 hover:text-slate-100 focus:ring-4 focus:ring-gray-200">Link</Link>
             </div>
         </div>
     )

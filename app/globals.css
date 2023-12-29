@@ -3,20 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-hex: #181818;
+  --background-hex: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-hex: #fff;
+    --background-hex: #181818;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: #181818;
+  color: var(--foreground-hex);
+  background: var(--background-hex);
 }
