@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const projects = {
     'nikhiltanwar.com': {
-        link: 'https://github.com/juuz0/RARS',
+        link: 'TODO',
         desc: `The website you're at!`,
         status: 'completed'
     },
